@@ -75,7 +75,7 @@ conda run uvicorn main:llm --reload
 
 9. Now in the browser we paste the url link: 
 
-http://127.0.0.1:8000/llma  which provide the product name, description and price in JSON format.
+http://127.0.0.1:8000/llma  which provides the product name, description and price in JSON format.
 
  The working of this code is that, I have manually chosen a website that can be scraped for content: https://webscraper.io/test-sites 
  
@@ -124,6 +124,7 @@ So to sum it up, we can see the block diagram:
 
 In this way I have created an API that extracts meaningful attributes from a HTML block of an e-commerce website using an open source large langauge model Llama 3:8b which returns the relevant and meaningful information (product name, description and price) from the page in JSON format.
 
+Here we fed the prompt to the llama3 model to find the product name, description and the price from the provided HTML content in a JSON format. It uses this prompt to output meaningful and relevant information in the JSON format.
 
 For another example, let us do the same steps to get:
 
