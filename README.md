@@ -37,7 +37,7 @@ For this project, I have chosen the Llama3 8b and installed it locally in my mac
 
 <img src="images/Ollama.png" width="500" style="vertical-align:middle;margin:0px 50px"> 
 <p>  </p>
- 5. To download the Llama 3, paste the code in the terminal:
+ 4. To download the Llama 3, paste the code in the terminal:
 
 ```
  ollama run llama3
@@ -46,9 +46,9 @@ For this project, I have chosen the Llama3 8b and installed it locally in my mac
 <img src="images/Llama3.png" width="500" style="vertical-align:middle;margin:0px 50px">  
 <p>  </p>
 
-6. Then the Llama 3:8b model has been installed.
+5. Then the Llama 3:8b model has been installed.
 
-7. Now for creating the API, I use the FastAPI:
+6. Now for creating the API, I use the FastAPI:
 
 ```
 conda config --add channels conda-forge 
@@ -63,9 +63,9 @@ conda install uvicorn
 conda install requests
 conda install beautifulsoup4
 ```
-8. Now in my local machine, first the Ollama app is run. 
+7. Now in my local machine, first the Ollama app is run. 
 
-9. Then the test.py file is opened and run by typing the command in the terminal:
+8. Then the main.py file is opened and run by typing the command in the terminal:
 ```
 conda run uvicorn main:llm --reload
 ```
@@ -73,7 +73,7 @@ conda run uvicorn main:llm --reload
 
    The  index route opens automatically at http://127.0.0.1:8000
 
-10. Now in the browser we paste the url link: 
+9. Now in the browser we paste the url link: 
 
 http://127.0.0.1:8000/llma  which provide the product name, description and price in JSON format.
 
