@@ -43,4 +43,4 @@ if __name__ == '__main__':
 
 
 # to run the API, we type on the terminal
-# conda run uvicorn poop:llm --reload
+# conda run uvicorn main:llm --reload
