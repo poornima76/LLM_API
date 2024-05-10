@@ -67,7 +67,7 @@ conda install beautifulsoup4
 
 9. Then the test.py file is opened and run by typing the command in the terminal:
 ```
-conda run uvicorn test:llm --reload
+conda run uvicorn main:llm --reload
 ```
 
 
@@ -126,6 +126,7 @@ In this way I have created an API that extracts meaningful attributes from a HTM
 
 
 For another example, let us do the same steps to get:
+
 Input:
 
 <img src="images/example_input.png" width="700" style="vertical-align:middle;margin:0px 50px">       
