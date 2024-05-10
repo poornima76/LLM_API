@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-import uvicorn
+import uvicorn # for ASGI, Asynchronous Server Gateway Interface
 import ollama
 import requests
 from bs4 import BeautifulSoup
@@ -43,7 +43,6 @@ input_html = page.prettify()
 def get_res():
     response = ollama.generate(model="llama3",
                                prompt="using this HTMl content, please find the product name, description, price product and store it in a JSON format"+ input_html,
-                            stream=False,
                             format='json')
     return(response)
 
@@ -52,7 +51,7 @@ def get_res():
 # to run the API, we type on the terminal
 # conda run uvicorn poop:llm --reload
 # if we run  http://127.0.0.1:8000/docs, then it provides the Postman type of UI
-# called Swagger, where we can check the post and status code if the request is succesful or not
+# called Swagger, where we can check the get,post and status code if the request is succesful or not
 
 if __name__ == '__main__':
     uvicorn.run(llm, host='127.0.0.1', port=8000)
