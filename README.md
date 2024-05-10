@@ -71,7 +71,7 @@ conda run uvicorn test:llm --reload
 ```
 
 
-    The  index route opens automatically at http://127.0.0.1:8000
+   The  index route opens automatically at http://127.0.0.1:8000
 
 10. Now in the browser we paste the url link: 
 
